@@ -3,10 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Checking files..."
+      - echo "Listing files"
       - ls -la
-      - echo "Creating clean Lambda zip..."
-      - zip -r function.zip lambda_fun.py
+      - echo "Creating correct lambda package"
+      - zip -j function.zip lambda_fun.py
 
 artifacts:
   files:
